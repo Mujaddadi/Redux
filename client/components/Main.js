@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link }from 'react-router'
 
-const Main = React.createClass({
+
+class Main extends React.Component
+{
     render(){
+
+        //React.cloneElement will pass down props to it's child component
         return (
         <div>
             <h1>
@@ -12,6 +16,6 @@ const Main = React.createClass({
         </div>
         )
     }
-})
+}
 
 export default Main;
